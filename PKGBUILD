@@ -1,6 +1,6 @@
 pkgname=portproton
 pkgver=97
-pkgrel=4
+pkgrel=5
 pkgdesc="Software for playing Microsoft Windows games and launchers"
 arch=('x86_64')
 url="https://portwine-linux.ru/port-proton-linux/"
@@ -9,7 +9,7 @@ depends=('bash' 'icoutils' 'inxi' 'yad' 'wget' 'bubblewrap' 'zstd' 'cabextract'
          'bc' 'tar' 'openssl' 'desktop-file-utils' 'curl' 'dbus' 'freetype2'
          'gdk-pixbuf2' 'ttf-font' 'zenity' 'lsb-release' 'nss' 'xorg-xrandr'
          'vulkan-driver' 'vulkan-icd-loader' 'lsof' 'lib32-libgl' 'lib32-gcc-libs' 'vulkan-tools'
-         'lib32-libx11' 'lib32-libxss' 'lib32-alsa-plugins' 'lib32-libgpg-error'
+         'lib32-libx11' 'lib32-libxss' 'lib32-alsa-plugins' 'lib32-libgpg-error' 'lib32-freetype2'
          'lib32-nss' 'lib32-vulkan-driver' 'lib32-vulkan-icd-loader' 'lib32-openssl')
 optdepends=('gamemode: Support for Feral GameMode'
             'lib32-gamemode: 32-bit support for Feral GameMode')
