@@ -1,7 +1,9 @@
 # Maintainer: Fidel tergoevm@gmail.com
+# Contributor: 1IxI1 victorsyshchenko@gmail.com
+
 pkgname=portproton
-pkgver=97
 pkgrel=6
+pkgver=97
 pkgdesc="Software for playing Microsoft Windows games and launchers"
 arch=('x86_64')
 url="https://portwine-linux.ru/port-proton-linux/"
@@ -14,8 +16,7 @@ depends=('bash' 'icoutils' 'yad' 'wget' 'bubblewrap' 'zstd' 'cabextract'
          'lib32-nss' 'lib32-vulkan-driver' 'lib32-vulkan-icd-loader' 'lib32-openssl')
 optdepends=('gamemode: Support for Feral GameMode'
             'lib32-gamemode: 32-bit support for Feral GameMode')
-_commit=1c80e991469de273025a99240129050855a19b9e
-source=("https://raw.githubusercontent.com/Castro-Fidel/PortWINE/$_commit/portwine_install_script/PortProton-$pkgver"
+source=("https://raw.githubusercontent.com/Castro-Fidel/PortWINE/master/portwine_install_script/PortProton-97"
         "$pkgname.desktop"
         "$pkgname.png"
         'LICENSE')
@@ -25,7 +26,7 @@ sha256sums=('1980f23e37e42f6f1f105874892175ac6fb01fcb93321568171a226ce6ef6d86'
             '70c0832c10f5fb81335d0b2ce0d29779db98e15801c295d247e3369eddc85328')
 
 package() {
-  install -Dm755 "PortProton-$pkgver" "$pkgdir/usr/bin/$pkgname"
+  install -Dm755 "PortProton-97" "$pkgdir/usr/bin/$pkgname"
   install -Dm644 "$pkgname.desktop" -t "$pkgdir/usr/share/applications/"
   install -Dm644 "$pkgname.png" -t "$pkgdir/usr/share/pixmaps"
   install -Dm644 LICENSE -t "$pkgdir/usr/share/licenses/$pkgname/"
