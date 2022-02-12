@@ -1,5 +1,5 @@
 # Maintainer: Fidel tergoevm@gmail.com
-# Contributor: 1IxI1 victorsyshchenko@gmail.com
+# Contributor: 1IxI1 victorsyshchenko@gmail.com (AUR)
 
 pkgname=portproton
 pkgrel=6
@@ -26,7 +26,7 @@ sha256sums=('1980f23e37e42f6f1f105874892175ac6fb01fcb93321568171a226ce6ef6d86'
             '70c0832c10f5fb81335d0b2ce0d29779db98e15801c295d247e3369eddc85328')
 
 package() {
-  install -Dm755 "PortProton-97" "$pkgdir/usr/bin/$pkgname"
+  install -Dm755 "PortProton-$pkgver" "$pkgdir/usr/bin/$pkgname"
   install -Dm644 "$pkgname.desktop" -t "$pkgdir/usr/share/applications/"
   install -Dm644 "$pkgname.png" -t "$pkgdir/usr/share/pixmaps"
   install -Dm644 LICENSE -t "$pkgdir/usr/share/licenses/$pkgname/"
