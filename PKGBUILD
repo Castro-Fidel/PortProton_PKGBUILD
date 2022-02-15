@@ -2,13 +2,13 @@
 # Contributor: 1IxI1 victorsyshchenko@gmail.com (AUR)
 
 pkgname=portproton
-pkgrel=6
+pkgrel=7
 pkgver=97
 pkgdesc="Software for playing Microsoft Windows games and launchers"
 arch=('x86_64')
 url="https://portwine-linux.ru/port-proton-linux/"
 license=('MIT')
-depends=('bash' 'icoutils' 'yad' 'wget' 'bubblewrap' 'zstd' 'cabextract'
+depends=('procps-ng' 'bash' 'icoutils' 'yad' 'wget' 'bubblewrap' 'zstd' 'cabextract'
          'bc' 'tar' 'openssl' 'desktop-file-utils' 'curl' 'dbus' 'freetype2'
          'gdk-pixbuf2' 'ttf-font' 'zenity' 'lsb-release' 'nss' 'xorg-xrandr'
          'vulkan-driver' 'vulkan-icd-loader' 'lsof' 'lib32-libgl' 'lib32-gcc-libs' 'vulkan-tools'
