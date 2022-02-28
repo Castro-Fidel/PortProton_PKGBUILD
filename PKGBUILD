@@ -1,19 +1,18 @@
-# Maintainer: Fidel tergoevm@gmail.com
-# Contributor: 1IxI1 victorsyshchenko@gmail.com (AUR)
+# Maintainer: PortWINE-Linux.ru (tergoevm@gmail.com)
 
 pkgname=portproton
 pkgver=1.0
-pkgrel=7
+pkgrel=8
 pkgdesc="Software for playing Microsoft Windows games and launchers"
 arch=('x86_64')
 url="https://portwine-linux.ru/port-proton-linux/"
 license=('MIT')
 depends=('procps-ng' 'bash' 'icoutils' 'yad' 'wget' 'bubblewrap' 'zstd' 'cabextract'
          'bc' 'tar' 'openssl' 'desktop-file-utils' 'curl' 'dbus' 'freetype2' 'xdg-utils'
-         'gdk-pixbuf2' 'ttf-font' 'zenity' 'lsb-release' 'nss' 'xorg-xrandr' 'lsof'
+         'gdk-pixbuf2' 'ttf-font' 'zenity' 'lsb-release' 'nss' 'xorg-xrandr' 'lsof' 'mesa-utils'
          'vulkan-driver' 'vulkan-icd-loader' 'lib32-libgl' 'lib32-gcc-libs' 'vulkan-tools'
          'lib32-libx11' 'lib32-libxss' 'lib32-alsa-plugins' 'lib32-libgpg-error' 'lib32-freetype2'
-         'lib32-nss' 'lib32-vulkan-driver' 'lib32-vulkan-icd-loader' 'lib32-openssl')
+         'lib32-nss' 'lib32-vulkan-driver' 'lib32-vulkan-icd-loader' 'lib32-openssl' 'lib32-mesa-utils')
 optdepends=('gamemode: Support for Feral GameMode'
             'lib32-gamemode: 32-bit support for Feral GameMode')
 source=("https://raw.githubusercontent.com/Castro-Fidel/PortWINE/master/portwine_install_script/PortProton_1.0"
