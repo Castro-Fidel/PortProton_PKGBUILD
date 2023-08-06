@@ -7,6 +7,6 @@ PKGBUILD script for installing PortProton on arch-based distros.
 
 git clone https://aur.archlinux.org/portproton.git
 cd portproton
-makepkgi -sci
+makepkg -sci
 
 ```
