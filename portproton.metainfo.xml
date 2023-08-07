@@ -17,6 +17,65 @@
       PortProton – это проект, разработанный для того, чтобы сделать легким и удобным запуск Windows игр на Linux как для начинающих, так и для продвинутых пользователей. Проект стремится сделать запуск игр (и другого программного обеспечения) максимально простым, но в то же время предоставляет гибкие настройки для продвинутых пользователей
     </p>
   </description>
+
+  <screenshots>
+    <screenshot type="default">
+	  <caption>
+	    Auto Install
+	  </caption>
+	<image>
+	  https://raw.githubusercontent.com/Castro-Fidel/PortProton_PKGBUILD/main/screenshots/auto_install.png
+	</image>
+    </screenshot>
+    <screenshot>
+	  <caption>
+	    Emulators
+	   </caption>
+	<image>
+	  https://raw.githubusercontent.com/Castro-Fidel/PortProton_PKGBUILD/main/screenshots/emulators.png
+	</image>
+    </screenshot>
+	<screenshot>
+	  <caption>
+	    Wine Settings
+	  </caption>
+    <image>
+	  https://raw.githubusercontent.com/Castro-Fidel/PortProton_PKGBUILD/main/screenshots/wine_settings.png
+	</image>
+	</screenshot>
+	<screenshot>
+	  <caption>
+	    PortProton Settings
+	  </caption>
+    <image>
+	  https://raw.githubusercontent.com/Castro-Fidel/PortProton_PKGBUILD/main/screenshots/portproton_settings.png
+	</image>
+	</screenshot>
+	<screenshot>
+      <caption>
+	    Installed
+	  </caption>
+    <image>
+	  https://raw.githubusercontent.com/Castro-Fidel/PortProton_PKGBUILD/main/screenshots/installed.png
+	</image>
+	</screenshot>
+	<screenshot>
+      <caption>
+	    App Menu
+	  </caption>
+    <image>
+	  https://raw.githubusercontent.com/Castro-Fidel/PortProton_PKGBUILD/main/screenshots/app_menu.png
+	</image>
+	</screenshot>
+	<screenshot>
+      <caption>
+	    Edit DB
+	  </caption>
+    <image>
+	  https://raw.githubusercontent.com/Castro-Fidel/PortProton_PKGBUILD/main/screenshots/edit_db.png
+	</image>
+	</screenshot>
+  </screenshots>
   
   <categories>
     <category>Game</category>
