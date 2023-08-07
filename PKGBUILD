@@ -23,7 +23,7 @@ source=("https://raw.githubusercontent.com/Castro-Fidel/PortWINE/master/portwine
 sha256sums=('6fa73e20bf180ffa8b252d7d50dc43fcf62eed6caf8867e7a5bcf445daa6dabe'
             '17d2c7bc99707a88ec13422ff40f33004c8a41bf945143122d5ee0f6a3be3bce'
             'df2850787a0777bfd446bed40c6c2bcd6ce5636a241dfe08a6a915f151b20fd4'
-            'c7889e20b1fa13c17327681b5f637df84c4019f95673e4bd168dceba31cea599'
+            '12cf6820ac4145580df1c48e419dff3f4f7545790e45efc0332623b5e70633fe'
             '65d12e4e0be4dd5e58324593563c8c79af42876d63f51225364b968117c6ff4f')
 
 package() {
