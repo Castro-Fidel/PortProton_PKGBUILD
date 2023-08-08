@@ -17,7 +17,7 @@ optdepends=('gamemode: Support for Feral GameMode'
             'lib32-gamemode: 32-bit support for Feral GameMode')
 source=("https://raw.githubusercontent.com/Castro-Fidel/PortWINE/master/portwine_install_script/PortProton_1.0"
         "$pkgname.desktop"
-        "$pkgname.svg"
+        "https://raw.githubusercontent.com/Castro-Fidel/PortProton_PKGBUILD/main/$pkgname.svg"
         "$pkgname.metainfo.xml"
         "LICENSE")
 sha256sums=('6fa73e20bf180ffa8b252d7d50dc43fcf62eed6caf8867e7a5bcf445daa6dabe'
