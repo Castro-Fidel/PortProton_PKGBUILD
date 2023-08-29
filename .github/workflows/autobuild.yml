@@ -56,4 +56,4 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           tag_name: ${{ env.NOW }}
-          files: /__w/PortProton_PKGBUILD/portproton-*
+          files: /__w/PortProton_PKGBUILD/portproton/portproton-*
