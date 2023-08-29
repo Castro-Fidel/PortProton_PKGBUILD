@@ -1,0 +1,59 @@
+name: Build PortProton
+on: 
+  push:
+    
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: 
+      image: archlinux:base-devel
+    
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    steps:
+
+      - name: Set current date as env variable
+        run: |
+          echo "NOW=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
+
+      - name: Prepare container
+        run: |
+          pacman -Syu --noconfirm --disable-download-timeout --needed git
+          
+          # Use all available threads to build a package
+          sed -i 's/#MAKEFLAGS="-j2"/MAKEFLAGS="-j$(nproc) -l$(nproc)"/g' /etc/makepkg.conf
+          
+          # Enable the multilib repository
+          cat << EOM >> /etc/pacman.conf
+          [multilib]
+          Include = /etc/pacman.d/mirrorlist
+          EOM
+          
+          pacman -Sy
+
+          useradd -m user -G wheel && echo "user ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
+          chown user -R /tmp
+          chown user -R ..
+
+      - name: Build PortProton
+        run: |
+          cd /__w/PortProton_PKGBUILD
+          git clone https://aur.archlinux.org/portproton.git 
+          cd /__w/PortProton_PKGBUILD/portproton
+          chown user -R ..
+          su user -c "yes '' | makepkg --noconfirm -sd"
+
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Release PortProton to Github Releases
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ env.NOW }}
+          files: /__w/PortProton_PKGBUILD/portproton-*
