@@ -2,7 +2,15 @@
 
 SYS_ID="$(cat /sys/devices/virtual/dmi/id/product_name)"
 
-echo -e 'Please provide your sudo password'
+if [[ ! -e "PKGBUILD" ]]
+then curl https://raw.githubusercontent.com/Castro-Fidel/PortProton_PKGBUILD/main/PKGBUILD
+fi
+
+if [[ ! -e "PKGBUILD_STEAMDECK" ]]
+then curl https://raw.githubusercontent.com/Castro-Fidel/PortProton_PKGBUILD/main/PKGBUILD_STEAMDECK
+fi
+
+echo 'Please provide your sudo password'
 
 # STEAMDECK and STEAMDECK OLED
 if [[ ":Jupiter:Galileo:" =~ :"$SYS_ID": ]]; then
