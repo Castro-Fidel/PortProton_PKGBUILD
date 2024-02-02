@@ -8,11 +8,11 @@ arch=('x86_64')
 url="https://linux-gaming.ru"
 license=('MIT')
 depends=('procps-ng' 'bash' 'icoutils' 'yad' 'wget' 'bubblewrap' 'zstd' 'cabextract' 'gzip'
-         'bc' 'tar' 'openssl' 'desktop-file-utils' 'curl' 'dbus' 'freetype2' 'xdg-utils'
+         'bc' 'tar' 'openssl' 'openssl-1.1' 'desktop-file-utils' 'curl' 'dbus' 'freetype2' 'xdg-utils'
          'gdk-pixbuf2' 'ttf-font' 'zenity' 'nss' 'xorg-xrandr' 'lsof' 'mesa-utils'
          'vulkan-driver' 'vulkan-icd-loader' 'lib32-libgl' 'lib32-gcc-libs' 'vulkan-tools'
          'lib32-libx11' 'lib32-libxss' 'lib32-alsa-plugins' 'lib32-libgpg-error' 'lib32-freetype2'
-         'lib32-nss' 'lib32-vulkan-driver' 'lib32-vulkan-icd-loader' 'lib32-openssl' 'lib32-mesa-utils' 'python-pillow')
+         'lib32-nss' 'lib32-vulkan-driver' 'lib32-vulkan-icd-loader' 'lib32-openssl' 'lib32-openssl-1.1' 'lib32-mesa-utils' 'python-pillow')
 optdepends=('gamescope: Support for Gamescope'
             'icoextract: Support exe icons in GNOME')
 
