@@ -2,7 +2,7 @@
 
 pkgname=portproton
 pkgver=1.3
-pkgrel=2
+pkgrel=3
 pkgdesc="Software for playing Microsoft Windows games and launchers"
 arch=('x86_64')
 url="https://linux-gaming.ru"
