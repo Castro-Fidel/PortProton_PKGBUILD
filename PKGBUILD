@@ -2,7 +2,7 @@
 
 pkgname=portproton
 pkgver=1.3
-pkgrel=2
+pkgrel=4
 pkgdesc="Software for playing Microsoft Windows games and launchers"
 arch=('x86_64')
 url="https://linux-gaming.ru"
@@ -15,7 +15,7 @@ depends=('procps-ng' 'bash' 'icoutils' 'yad' 'wget' 'bubblewrap' 'zstd' 'cabextr
          'lib32-nss' 'lib32-vulkan-driver' 'lib32-vulkan-icd-loader' 'lib32-openssl' 'lib32-openssl-1.1' 'lib32-mesa-utils' 'python-pillow')
 optdepends=('gamescope: Support for Gamescope'
             'icoextract: Support exe icons in GNOME')
-
+            
 source=("$pkgname.tar.gz::https://github.com/Castro-Fidel/PortProton_ALT/archive/v$pkgver.tar.gz")
 sha256sums=('757790dea56248ae28d8d070e0413f75fe80422a053a52db0740f705770bf6fd')
 
