@@ -2,6 +2,11 @@
 
 SYS_ID="$(cat /sys/devices/virtual/dmi/id/product_name)"
 
+if passwd -S $USER | grep -q "NP" ; then
+	echo "The user password is not specified, for the script to work it is necessary to specify the user password via passwd"
+	exit
+fi
+
 echo 'Please provide your sudo password'
 
 # STEAMDECK and STEAMDECK OLED
