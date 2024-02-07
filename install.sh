@@ -7,6 +7,11 @@ if passwd -S $USER | grep -q "NP" ; then
 	exit
 fi
 
+if grep -iq "ChimeraOS" /etc/os-release ; then
+    echo "This script is not supported ChimeraOS"
+    exit
+fi
+
 echo 'Please provide your sudo password'
 
 # STEAMDECK and STEAMDECK OLED
