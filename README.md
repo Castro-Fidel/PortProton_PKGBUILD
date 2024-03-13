@@ -9,9 +9,13 @@ PKGBUILD script for installing PortProton on arch-based distros.
 git clone https://aur.archlinux.org/icoextract.git
 cd icoextract
 makepkg -sci
+```
 
-git clone https://aur.archlinux.org/portproton.git
-cd portproton
+If you use GNOME, you will also need icoextract to display icons.
+
+```sh
+git clone https://aur.archlinux.org/icoextract.git
+cd icoextract
 makepkg -sci
 
 ```
