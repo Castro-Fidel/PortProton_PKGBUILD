@@ -2,7 +2,7 @@
 
 pkgname=portproton
 _xdg_name=ru.linux_gaming.PortProton
-pkgver=1.7.1
+pkgver=1.7.3
 pkgrel=1
 pkgdesc="Software for playing Microsoft Windows games and launchers"
 arch=('x86_64')
@@ -11,7 +11,7 @@ license=('MIT')
 
 depends=('bash' 'yad' 'bubblewrap' 'zstd' 'cabextract' 'gzip'
          'tar' 'openssl' 'desktop-file-utils' 'curl' 'dbus' 'freetype2' 'xdg-utils'
-         'gdk-pixbuf2' 'ttf-font' 'nss' 'xorg-xrandr' 'mesa-utils' 'imagemagick'
+         'gdk-pixbuf2' 'ttf-font' 'nss' 'xorg-xrandr' 'mesa-utils'
          'vulkan-driver' 'vulkan-icd-loader' 'lib32-libgl' 'lib32-gcc-libs' 'vulkan-tools'
          'lib32-libx11' 'lib32-libxss' 'lib32-alsa-plugins' 'lib32-pipewire' 'lib32-libgpg-error' 'lib32-gnutls' 'lib32-freetype2'
          'lib32-nss' 'lib32-vulkan-driver' 'lib32-vulkan-icd-loader' 'lib32-openssl' 'python-pillow'
@@ -21,7 +21,7 @@ optdepends=('gamemode: Support for Feral GameMode'
             'gamescope: Support for Gamescope')
 
 source=("$pkgname.tar.gz::https://github.com/Castro-Fidel/PortProton_ALT/archive/v$pkgver.tar.gz")
-sha256sums=('af6787640cc2bca5a6a3cf34372ea8d7cee9521d1e732c5047236554b816b9af')
+sha256sums=('18ca38274882dbeabb15a93e5c1d5fbd2429217239c994ecd2c0bc6db86de6c3')
 
 package() {
   cd PortProton_ALT-$pkgver
